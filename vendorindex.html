@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Vendor E-Commerce Platform</title>
+    <link rel="stylesheet" href="vendorstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Multi-Vendor E-Commerce Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#vendors">Vendors</a></li>
+                <li><a href="#addProduct">Add Product</a></li>
+                <li><button id="toggleDarkMode">Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Explore products from various vendors, sorted into categories like Fashion, Electronics, and Grocery!</p>
+        </section>
+
+        <section id="vendors">
+            <h2>Vendors</h2>
+            <div id="vendorList" class="grid-container">
+                <!-- Vendor sections dynamically added here -->
+            </div>
+        </section>
+
+        <section id="addProduct">
+            <h2>Add Product</h2>
+            <form id="productForm">
+                <label for="vendorName">Vendor Name:</label>
+                <input type="text" id="vendorName" placeholder="Enter your name" required>
+
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" placeholder="Enter product name" required>
+
+                <label for="category">Category:</label>
+                <select id="category" required>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Grocery">Grocery</option>
+                </select>
+
+                <label for="productPrice">Price:</label>
+                <input type="number" id="productPrice" placeholder="Enter price" required>
+
+                <label for="productImage">Product Image URL:</label>
+                <input type="url" id="productImage" placeholder="Enter image URL" required>
+
+                <button type="submit">Add Product</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Multi-Vendor E-Commerce Platform</p>
+    </footer>
+
+    <script src="vendorscript.js"></script>
+</body>
+</html>
